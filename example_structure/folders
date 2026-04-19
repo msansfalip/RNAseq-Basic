@@ -1,5 +1,6 @@
-example_structure/
-    raw_data/
-    fastqc/
-    salmon_quant/
-    figures/
+experiment_name/
+    Salmon/
+    analysis/
+    fastQC/
+    raw_fastq/
+    reference_cDNA/

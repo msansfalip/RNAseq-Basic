@@ -1,0 +1,5 @@
+example_structure/
+    raw_data/
+    fastqc/
+    salmon_quant/
+    figures/

@@ -1,4 +1,4 @@
-#Only for the first time using the code run these 3 code lines:
+#Only for the first time using the code run these 4 code lines:
 #install.packages("BiocManager")
 #BiocManager::install(c("tximport", "DESeq2", "GenomicFeatures","txdbmaker"))
 #BiocManager::install("txdbmaker")
@@ -101,7 +101,7 @@ ggplot(df, aes(x = log2FC, y = negLogP, color = threshold)) +
     legend.position = "right"
   )
 
-#Heatmap run the 2 lines below only the first time to install packages
+#Heatmap run the 3 lines below only the first time to install packages
 #install.packages("pheatmap")
 #install.packages("org.Mm.eg.db")
 #install.packages("dplyr")

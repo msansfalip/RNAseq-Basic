@@ -1,0 +1,7 @@
+Go to NCBI GEO and search for a Bulk RNAseq SRR of interest
+Download the SRR FW i RV directly or open Galaxy (https://usegalaxy.org/) and upload - paste/fetch data and copy the FW and RV file links.
+In Galaxy use Faster Download and Extract Reads in FASTQ (fasterq dump) to extract the FastQ reads
+Use FastQC in Galaxy for tje read quality reports and if necessary do Trimming (fastp)
+Use (salmon quant) for transcript quantification, in the module options choose paired end and use the cDNA reference annotation
+Paste the generated data in the correspondent folders (see example_structure) 
+Use R code to process and analyze data

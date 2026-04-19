@@ -111,9 +111,7 @@ library(pheatmap)
 
 #Choose the Ensembl codes for the desired genes to visualize
 genes_final <- c(
-  "ENSMUSG00000036887", "ENSMUSG00000023992",
-  # Tus genes
-  "ENSMUSG00000032360","ENSMUSG00000028778","ENSMUSG00000045471","ENSMUSG00000044288"
+  "ENSMUSG00000023992"
 )
 
 genes_present <- genes_final[genes_final %in% rownames(vsd)]
@@ -150,7 +148,7 @@ rownames(tx_counts) <- sub("\\..*", "", rownames(tx_counts))
 tx2gene$TXNAME <- sub("\\..*", "", tx2gene$TXNAME)
 
 #Choose the desired gene to analyze
-my_gene <- "ENSMUSG00000044288"
+my_gene <- "ENSMUSG00000023992"
 
 tx_my_gene <- tx2gene %>%
   filter(GENEID == my_gene) %>%
